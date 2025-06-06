@@ -1,0 +1,5 @@
+#back-button,
+#forward-button,
+#reload-button {
+  display: none !important;
+}
