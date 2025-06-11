@@ -1,26 +1,27 @@
 @-moz-document url-prefix("chrome:") {
-    #statuspanel {
-        top: -30px !important;
-        z-index: 2;
-        left: 2px !important;
-        display: block !important;
-        position: fixed !important;
-        margin: 0 !important;
-    }
+#statuspanel {
+  top: -30px !important;
+  z-index: 2;
+  left: 2px !important;
+  display: block !important;
+  position: fixed !important;
+  margin: 0 !important;
+}
 
-    #statuspanel-label {
-        border-radius: 2px !important;
-        font-size: 10px !important;
-        margin: 0 !important;
-        padding: 2px 5px !important;
-        border: 1px solid #99228880 !important;
-        background: #55228890 !important;
-        color: #aa8822bb !important;
-    }
+#statuspanel-label {
+  border-radius: 2px !important;
+  font-size: 10px !important;
+  margin: 0 !important;
+  padding: 2px 5px !important;
+  border: 1px solid #99228880 !important;
+  background-color: #331133aa !important;
+  color: #ccaa44bb !important;
+}
 
-    #back-button,
-    #forward-button,
-    #reload-button {
-        display: none !important;
-    }
+#back-button,
+#forward-button,
+#reload-button {
+  display: none !important;
+}
+
 }
