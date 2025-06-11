@@ -1,0 +1,29 @@
+{
+  "name": "zen-painless-mods",
+  "version": "1.0.0",
+  "description": "My mods to work well with tridactyl keyboard navigation.",
+  "main": "index.js",
+  "scripts": {
+    "watch": "npx gulp watch",
+    "build": "npx gulp css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/4ndri/zen-painless-mods.git"
+  },
+  "keywords": [
+    "zen-browser"
+  ],
+  "author": "4ndri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/4ndri/zen-painless-mods/issues"
+  },
+  "homepage": "https://github.com/4ndri/zen-painless-mods#readme",
+  "devDependencies": {
+    "gulp": "^5.0.1",
+    "gulp-postcss": "^10.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-wrap": "^0.0.4"
+  }
+}
