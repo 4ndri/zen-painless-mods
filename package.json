@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch": "npx gulp watch",
-    "build": "npx gulp css"
+    "build": "npx gulp build"
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,6 @@
   "homepage": "https://github.com/4ndri/zen-painless-mods#readme",
   "devDependencies": {
     "gulp": "^5.0.1",
-    "gulp-postcss": "^10.0.0",
-    "postcss-import": "^16.1.0",
-    "postcss-wrap": "^0.0.4"
+    "gulp-file-include": "^2.3.0"
   }
 }

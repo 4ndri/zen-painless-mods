@@ -1,2 +1,4 @@
-@import "painless-status/painless-status.css";
-@import "painless-toolbar/painless-toolbar.css";
+@-moz-document url-prefix("chrome:") {
+@@include('./painless-status/painless-status.css')
+@@include('painless-toolbar/painless-toolbar.css')
+}

@@ -1,19 +1,17 @@
+const fileinclude = require("gulp-file-include");
 const gulp = require("gulp");
-const postcss = require("gulp-postcss");
-const atImport = require("postcss-import");
-const wrap = require("postcss-wrap");
 
 const SRC_CSS = "mods/chrome.css";
 
 // Default task: process CSS
-gulp.task("css", () => {
+gulp.task("build", () => {
   return gulp
     .src(SRC_CSS)
     .pipe(
-      postcss([
-        atImport(), // inlines all your @import "…".css
-        wrap({ selector: '@-moz-document url-prefix("chrome:")' }),
-      ]),
+      fileinclude({
+        prefix: "@@",
+        basepath: "@file",
+      }),
     )
     .pipe(gulp.dest(".")); // writes chrome.css in project root
 });
